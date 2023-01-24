@@ -21,7 +21,7 @@ const questions = [
       id: 4,
       title: 'Is it only web based? I only have mobile',
       info:
-        'It\'s a web app that has been optimised for mobile, so it will also work on your mobile device, just not as good - so videos dont autoplay on iphone for example',
+        'It\'s a web dapp that has been optimised for mobile, so it will also work on your mobile device, just not as good - so videos don\'t currently autoplay on iPhone for example',
     },
     {
       id: 5,
@@ -33,7 +33,7 @@ const questions = [
       id: 6,
       title: 'Why do I have to fund bundlr to upload, that sucks',
       info:
-        'We know, web3 UX still has a lot to be desired. We used bundlr as they promise superfast uploads. We tested it without and videos took forever! Likely will add option for ipfs upload a la LensTube to give you options',
+        'We know, web3 UX still leaves a lot to be desired. We used bundlr as they promise superfast uploads. We tested it without and videos took forever! Likely will add option for ipfs upload a la LensTube to give you options',
    },
     {
       id: 7,

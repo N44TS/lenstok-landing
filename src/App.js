@@ -4,6 +4,7 @@ import Question from "./FAQS/Question";
 import data from "./FAQS/data";
 import VID from "./@lenstokxyz.mp4";
 import POAP from "./poapicon.png";
+import LOGO from "./LenstokLogo.png";
 
 function App() {
   const [questions, setQuestions] = useState(data);
@@ -40,7 +41,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              1. Get a .test handle
+              1. Claim a .test handle
             </a>
             <p>↓</p>
             <a
@@ -69,7 +70,8 @@ function App() {
         </main>
 
         <footer>
-       <p>@lenstokxyz</p>
+        <p style={{lineHeight: "25px"}}>@lenstokxyz</p>
+        <img src={LOGO} alt="logo" className="logo"></img>
         </footer>
       </div>
     </div>
