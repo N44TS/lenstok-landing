@@ -1,38 +1,425 @@
 .App {
   text-align: center;
+  vertical-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.top-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 10px #4CAF50;
+}
+
+.bottom-button {
+  background-color: #8BC34A;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 10px #8BC34A;
+}
+
+.top-button:hover {
+  transform: scale(1.1);
+  background-color: #3E8E41;
+}
+
+.top-button:active {
+  transform: scale(0.9);
+  background-color: #3E8E41;
+}
+
+.bottom-button:hover {
+  transform: scale(1.1);
+  background-color: #8ad747;
+}
+
+.bottom-button:active {
+  transform: scale(0.9);
+  background-color: #689F38;
+}
+
+
+#icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px 5px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.poap {
+border-radius: 10px; 
+border: 1px solid rgb(145, 96, 210);
+height: 40px;
+width: 40px;
+padding: 2px !important;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5px;
+cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.poap:hover {
+  opacity: 0.7;
+}
+
+.toppara {
+  padding: 10px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--clr-grey-7);
+  color: var(--clr-grey-1);
+  font-size: 0.875rem;
+  background-size: cover;
+  height: 100%;
+
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1, 
+h2, 
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+h1 {
+  color: pink;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 500;
+font-size: 24px;
+letter-spacing: -0.7px;
+font-size: 1.5rem;
+line-height: 2rem;
+color: #5c5c5c;
+}
+
+
+p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #5c5c5c;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
   }
 }
+ 
+
+/*
+=============== 
+Grid
+===============
+*/
+
+.grid > * {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.headerup {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.gradient-text {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  padding: 30px 15px 15px 15px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom right, #0d3f19, #1da746);
+  font-size: 62px;
+  letter-spacing: -3.8px;
+  line-height: 1.2;
+  max-width: 100%;
+  position: relative;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+main {
+width: 100%;
+/* background: linear-gradient(to bottom right, #0d3f24, #1da767); */
+background: #1a4325;
+}
+
+footer
+{
+width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  headerup {
+  display: none !important;
+} 
+}
+
+
+@media screen and (max-width: 600px) {
+  headerup {
+  display: none !important;
+}
+
+ .gradient-text {
+font-size: 3rem;
+} 
+
+}
+
+/*
+=============== 
+FORM STYLE
+===============
+*/
+
+.buttonform {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: #AA0114;
+  border: 0;
+  padding: 15px 15px;
+  margin-top: 5px;
+  color: white;
+  border-radius: 12px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  background: linear-gradient(to bottom right, #3f0d12, #a71d31, #aaa9ad);
+  background-blend-mode: color-dodge, overlay, difference, difference, normal;
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+.buttonform:hover {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.buttonform:focus {
+  background: #AA0114;
+  background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7a2828, #a73737, #3f0d12, #a71d31); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+}
+
+.buttonform:focus:not(:focus-visible) {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: #AA0114;
+  border: 0;
+  padding: 15px 15px;
+  margin-top: 5px;
+  color: white;
+  border-radius: 12px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  background: linear-gradient(to bottom right, #3f0d12, #a71d31, #aaa9ad);
+  background-blend-mode: color-dodge, overlay, difference, difference, normal;
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/*
+=============== 
+Questions
+===============
+*/
+mainabc {
+  min-height: 100vh;
+  /* using flex because of better browser support */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerabc {
+  width: 90vw;
+  margin: 5rem auto;
+  background: transparent;
+  border-radius: 0.25rem;
+  padding: 2.5rem 2rem;
+  max-width: 920px;
+  display: grid;
+  gap: 1rem 2rem;
+
+}
+.containerabc h3 {
+  line-height: 1.2;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+@media screen and (min-width: 992px) {
+  .containerabc {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+}
+.question {
+  padding: 1rem 1.5rem;
+  border: 2px solid #eae6eb;  
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+
+}
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+.question p {
+  color:  #f5f5f5;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.btnabc {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: #eae6eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #1a4325;
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.question-title {
+  cursor: pointer;
+}
+
