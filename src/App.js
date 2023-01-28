@@ -5,6 +5,7 @@ import data from "./FAQS/data";
 import VID from "./@lenstokxyz.mp4";
 import POAP from "./poapicon.png";
 import LOGO from "./LenstokLogo.png";
+import ARROW from "./Arrowpoap.png";
 
 const POAPFORM = 'https://my.forms.app/form/63d3d150103d2e402d955c5d';
 
@@ -19,13 +20,14 @@ function App() {
         </headerup>
 
         <div id="icon-container">
-          <span id="lens-follow-icon" data-handle="lenstokxyz" />
+          <span id="lens-follow-icon" data-handle="lenstokxyz"/>
           <a href="https://twitter.com/lenstokxyz" className="fa fa-twitter" target="_blank" rel="noreferrer noopener" aria-hidden={true} />
           <a href={POAPFORM} target="_blank" rel="noreferrer" className="fa">
           <img src={POAP} alt="poapicon" className="poap"/>
            </a>
-
-        </div>
+           <img src={ARROW} width="42" height="62"></img>
+          </div>
+       
 
         <h1 className="gradient-text">LensTok</h1>
 
@@ -53,12 +55,12 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              2. Lets play with the Dapp!
+              2. Play with the Dapp!
             </a>
           </div>
         </div>
 
-        <video src={VID} autoPlay loop muted width="65%" controls />
+        <video src={VID} autoplay loop muted width="65%" controls />
 
         <main>
           {/* The FAQ bit */}
