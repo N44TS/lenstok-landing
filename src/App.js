@@ -64,7 +64,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              2. Play with the Dapp! - testnet currently down  
+              2. Play with the Dapp! - testnet currently down 
             </a>
           </div>
         </div>
