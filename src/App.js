@@ -7,7 +7,7 @@ import POAP from "./poapicon.png";
 import LOGO from "./LenstokLogo.png";
 import ARROW from "./Arrowpoap.png";
 
-const POAPFORM = 'https://my.forms.app/form/63d3d150103d2e402d955c5d';
+const POAPFORM = "https://my.forms.app/form/63d3d150103d2e402d955c5d";
 
 function App() {
   const [questions, setQuestions] = useState(data);
@@ -16,18 +16,27 @@ function App() {
     <div className="App">
       <div>
         <headerup>
-          <p>Currently in alpha, still lots of bugs.. happy for feedback 🙏🌱</p>
+          <p>
+            {" "}
+            LENS TESTNET IS CURRENTLY DOWN... so that means our dapp is down
+            please bear with us🙏🌱
+          </p>
         </headerup>
 
         <div id="icon-container">
-          <span id="lens-follow-icon" data-handle="lenstokxyz"/>
-          <a href="https://twitter.com/lenstokxyz" className="fa fa-twitter" target="_blank" rel="noreferrer noopener" aria-hidden={true} />
+          <span id="lens-follow-icon" data-handle="lenstokxyz" />
+          <a
+            href="https://twitter.com/lenstokxyz"
+            className="fa fa-twitter"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-hidden={true}
+          />
           <a href={POAPFORM} target="_blank" rel="noreferrer" className="fa">
-          <img src={POAP} alt="poapicon" className="poap"/>
-           </a>
-           <img src={ARROW} width="42" height="62"></img>
-          </div>
-       
+            <img src={POAP} alt="poapicon" className="poap" />
+          </a>
+          <img src={ARROW} width="42" height="62"></img>
+        </div>
 
         <h1 className="gradient-text">LensTok</h1>
 
@@ -75,8 +84,8 @@ function App() {
         </main>
 
         <footer>
-        <p style={{lineHeight: "25px"}}>@lenstokxyz</p>
-        <img src={LOGO} alt="logo" className="logo"></img>
+          <p style={{ lineHeight: "25px" }}>@lenstokxyz</p>
+          <img src={LOGO} alt="logo" className="logo"></img>
         </footer>
       </div>
     </div>
