@@ -18,8 +18,7 @@ function App() {
         <headerup>
           <p>
             {" "}
-            LENS TESTNET IS CURRENTLY DOWN... so that means our dapp is down
-            please bear with us🙏🌱
+            Currently in alpha, still lots of bugs.. happy for feedback🙏🌱
           </p>
         </headerup>
 
@@ -64,7 +63,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              2. Play with the Dapp! - testnet currently down 
+              2. Play with the Dapp!
             </a>
           </div>
         </div>
