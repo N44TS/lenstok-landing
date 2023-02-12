@@ -30,11 +30,12 @@ function App() {
             target="_blank"
             rel="noreferrer noopener"
             aria-hidden={true}
+            alt="follow on lens"
           />
           <a href={POAPFORM} target="_blank" rel="noreferrer" className="fa">
             <img src={POAP} alt="poapicon" className="poap" />
           </a>
-          <img src={ARROW} width="42" height="62"></img>
+          {/* <img src={ARROW} width="42" height="62"></img> */}
         </div>
 
         <h1 className="gradient-text">LensTok</h1>
